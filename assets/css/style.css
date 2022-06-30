@@ -1,4 +1,7 @@
-@import url("https://db.onlinewebfonts.com/c/8db94ce247ff2ab0b07a11e94f79591c?family=Geometos");
+@font-face {
+  font-family: "Geometos";
+  src: url("/assets/fonts/Geometos.ttf");
+}
 
 .blocker {
   position: fixed;
