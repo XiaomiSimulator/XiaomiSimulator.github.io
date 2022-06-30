@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Geometos";
-  src: url(/assets/fonts/Geometos.ttf) format("truetype");
+  src: url("/assets/fonts/Geometos.ttf") format("truetype");
 }
 
 .blocker {
@@ -48,8 +48,7 @@ button {
   z-index: 1;
 }
 
-.miui_text,
-.miui_overlay {
+.miui_text, .miui_overlay {
   font-family: "Geometos";
   background: linear-gradient(to right, #f69f96, #cc78ea, #73a7f2);
   background-clip: text;
@@ -91,7 +90,6 @@ button {
 .loader {
   color: white;
   font-size: 200%;
-  font-weight: bold;
   font-family: "Geometos";
   text-align: center;
   position: fixed;
@@ -99,6 +97,7 @@ button {
   width: 80%;
   left: 10%;
   display: none;
+  word-spacing: -85%;
 }
 
 .loader__dot {
