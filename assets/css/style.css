@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Geometos";
-  src: url("/assets/fonts/Geometos.ttf") format("truetype");
+  src: url("../fonts/Geometos.ttf") format("truetype");
 }
 
 .blocker {
@@ -104,10 +104,10 @@ button {
   animation: 1s blink infinite;
 }
 .loader__dot:nth-child(2) {
-  animation-delay: 250ms;
+  animation-delay: 312.5ms;
 }
 .loader__dot:nth-child(3) {
-  animation-delay: 500ms;
+  animation-delay: 625ms;
 }
 
 @keyframes blink {
