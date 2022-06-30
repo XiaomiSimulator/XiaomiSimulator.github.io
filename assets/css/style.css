@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Geometos";
+  src: url("/assets/fonts/Geometos.ttf");
+}
+
+.blocker {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  z-index: 999999999;
+}
+
+button {
+  font-family: sans-serif;
+  height: 10%;
+  width: 10%;
+  margin: -5% -5%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  border-radius: 1em;
+  border: 1px solid #000;
+}
+
+.xiaomi_div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 10%;
+}
+
+.xiaomi_logo {
+  position: relative;
+  height: 100%;
+}
+
+.miui_div {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1;
+}
+
+.miui_text,
+.miui_overlay {
+  font-family: "Geometos";
+  background: linear-gradient(to right, #f69f96, #cc78ea, #73a7f2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  word-wrap: break-word;
+  font-size: 333.333%;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+}
+
+.miui_overlay {
+  background: linear-gradient(
+      to right,
+      transparent,
+      transparent,
+      white,
+      transparent,
+      transparent
+    )
+    right/500%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move 5s linear 1s infinite;
+  z-index: 3;
+  opacity: 0.8;
+}
+
+@keyframes move {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.loader {
+  color: white;
+  font-size: 200%;
+  font-weight: bold;
+  font-family: "Geometos";
+  text-align: center;
+  position: fixed;
+  bottom: 5%;
+  width: 80%;
+  left: 10%;
+  display: none;
+}
+
+.loader__dot {
+  animation: 1s blink infinite;
+}
+.loader__dot:nth-child(2) {
+  animation-delay: 250ms;
+}
+.loader__dot:nth-child(3) {
+  animation-delay: 500ms;
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+body {
+  background-color: #000;
+}
