@@ -10,7 +10,14 @@ function startSimulator() {
   setTimeout(function () {
     document.getElementsByClassName("blocker")[0].style.display = "none";
     setTimeout(function () {
-      new Audio("assets/audio/bootaudio.mp3").play();
+      var bootsound = new Audio("assets/audio/bootaudio.mp3");
+      bootsound.onended = function () {
+        document.getElementsByClassName("miui_overlay")[0].style.animation =
+          "move 5s linear 1s infinite";
+        document.getElementsByClassName("miui_overlay")[0].style.opacity =
+          "0.85";
+      };
+      bootsound.play();
     }, 2000);
     document.getElementsByClassName("miui_div")[0].style.display = "grid";
     document.getElementsByClassName("xiaomi_div")[0].style.display = "none";

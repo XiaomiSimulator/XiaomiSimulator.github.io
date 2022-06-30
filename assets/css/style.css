@@ -73,9 +73,8 @@ button {
     right/500%;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: move 5s linear 1s infinite;
   z-index: 3;
-  opacity: 0.85;
+  opacity: 0;
 }
 
 @keyframes move {
