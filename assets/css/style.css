@@ -97,7 +97,7 @@ button {
   width: 80%;
   left: 10%;
   display: none;
-  word-spacing: -85%;
+  word-spacing: -75%;
 }
 
 .loader__dot {
