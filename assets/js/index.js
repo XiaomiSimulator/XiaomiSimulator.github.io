@@ -1,4 +1,9 @@
 function startSimulator() {
+  if (document.body.requestFullscreen) {
+    document.body.requestFullscreen();
+  } else if (document.body.webkitRequestFullscreen) {
+    document.body.webkitRequestFullscreen();
+  }
   document.getElementsByClassName("blocker")[0].style.display = "none";
   document.getElementById("blocker_button").style.display = "none";
   setTimeout(function () {
