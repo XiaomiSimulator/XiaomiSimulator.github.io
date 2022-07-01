@@ -56,6 +56,14 @@ button {
   -webkit-text-fill-color: transparent;
   word-wrap: break-word;
   font-size: 333.333%;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; 
   grid-column: 1;
   grid-row: 1;
   z-index: 2;
