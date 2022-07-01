@@ -1,6 +1,6 @@
 # Xiaomi Device Simulator
 
-Available for preview [here](https://TriDiscord.github.io/xiaomi_simulator/).
+Available for preview [here](https://xiaomisimulator.github.io).
 
 ## Status
 
