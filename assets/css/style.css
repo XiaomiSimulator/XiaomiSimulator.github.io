@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Geometos";
-  src: url("./../fonts/Geometos.ttf") format("truetype");
+  font-family: "MiCharactersOnly";
+  src: url("./../fonts/MiCharactersOnly.otf") format("opentype");
 }
 
 .blocker {
@@ -26,16 +26,20 @@ button {
 
 .xiaomi_div {
   position: absolute;
+  text-align: center;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  height: 10%;
 }
 
-.xiaomi_logo {
-  position: relative;
-  height: 100%;
+.xiaomi_text {
+  font-family: "MiCharactersOnly";
+  color: white;
+  word-wrap: break-word;
+  font-size: 600%;
+  font-weight: 400;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .miui_div {
@@ -45,27 +49,19 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  z-index: 1;
 }
 
 .miui_text, .miui_overlay {
-  font-family: "Geometos";
+  font-family: "MiCharactersOnly";
   background: linear-gradient(to right, #f69f96, #cc78ea, #73a7f2);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   word-wrap: break-word;
   font-size: 333.333%;
-  font-style: normal;
   font-weight: 600;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; 
   grid-column: 1;
   grid-row: 1;
-  z-index: 2;
 }
 
 .miui_overlay {
@@ -80,7 +76,6 @@ button {
     right/500%;
   background-clip: text;
   -webkit-background-clip: text;
-  z-index: 3;
   opacity: 0;
 }
 
@@ -96,18 +91,18 @@ button {
 .loader {
   color: white;
   font-size: 200%;
-  font-family: "Geometos";
+  font-family: "MiCharactersOnly";
   text-align: center;
   position: fixed;
   bottom: 5%;
   width: 80%;
   left: 10%;
   display: none;
-  word-spacing: -75%;
 }
 
 .loader__dot {
-  animation: 1s blink infinite;
+  animation: blink 1.5s linear infinite;
+
 }
 .loader__dot:nth-child(2) {
   animation-delay: 312.5ms;
@@ -117,7 +112,7 @@ button {
 }
 
 @keyframes blink {
-  50% {
+  100% {
     color: transparent;
   }
 }
