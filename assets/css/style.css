@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Geometos";
-  src: url("../fonts/Geometos.ttf") format("truetype");
+  src: url("./assets/fonts/Geometos.ttf") format("truetype");
 }
 
 .blocker {
